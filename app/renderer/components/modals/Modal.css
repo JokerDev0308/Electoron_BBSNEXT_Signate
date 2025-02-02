@@ -1,0 +1,67 @@
+.dialog-content {
+  min-height: 60px;
+  margin: 0;
+  color: #000;
+  word-wrap: break-word;
+  display: block;
+  padding: 30px;
+  max-height: 65vh;
+  overflow: auto;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 3px;
+  border: 1px solid #cec1c1;
+  background-color: #fff;
+}
+
+.dialog-message {
+  font-size: 1.4em;
+}
+
+.dialog-input {
+  width: 268px;
+  height: 32px;
+  padding: 4px 10px;
+  color: #234150;
+  border: 1px solid #b0c7d2;
+  margin-top: 13px;
+}
+
+.dialog-actions {
+  margin-left: auto;
+  order: 2;
+  margin-top: 30px;
+}
+
+.btn-cancel,
+.btn-confirm {
+  min-width: 95px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  width: 129px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  color: #0a6797;
+  background-color: #fff;
+  border: 2px solid #0a6797;
+  margin-right: 24px;
+}
+
+.btn-confirm {
+  color: #fff;
+  border: none;
+  background-color: #0a6797;
+  margin: 5px;
+}
+
+.btn-confirm:focus,
+.btn-cancel:focus,
+.dialog-input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #4d90fe;
+}

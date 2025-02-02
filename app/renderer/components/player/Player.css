@@ -1,0 +1,60 @@
+.container {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.player-video {
+  background-color: transparent !important;
+}
+
+iframe {
+  background-color: white !important;
+}
+
+/** Styles for text alignments. **/
+.align {
+  display: flex;
+}
+
+.align.left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.align.center {
+  justify-content: center;
+  text-align: center;
+}
+
+.align.right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.align.top {
+  align-items: flex-start;
+}
+
+.align.middle {
+  align-items: center;
+}
+
+.align.bottom {
+  align-items: flex-end;
+}
+
+.align.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.align.vertical marquee {
+  height: 100%;
+  width: auto;
+  white-space: nowrap;
+}

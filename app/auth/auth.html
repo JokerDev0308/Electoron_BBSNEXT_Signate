@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>掲示板NEXTサイネージ</title>
+  <link href="./auth.css" rel="stylesheet">
+  <script type="text/javascript">
+    function doSubmit() {
+      const username = document.querySelector("#username").value;
+      const password = document.querySelector("#password").value;
+      window.authModule.submit(username, password)
+    }
+
+    function doCancel() {
+      window.authModule.submit("", "")
+    }
+  </script>
+</head>
+<body>
+<span class="modal-bg"></span>
+<div class="modal">
+  <div class="modal-content">
+    <p class="modal-head">このサイトはログインが必要です。</p>
+    <div class="modal-body">
+      <label class="modal-item is-active">
+        <input type="text" id="username" placeholder="ユーザー名" class="modal-field">
+      </label>
+      <label class="modal-item">
+        <input type="password" id="password" placeholder="パスワード" class="modal-field">
+      </label>
+    </div>
+    <ul class="modal-button-list">
+      <li class="modal-button-list__item">
+        <button type="button" onclick="return doCancel();" class="modal-button">キャンセル</button>
+      </li>
+      <li class="modal-button-list__item">
+        <button type="button" onclick="return doSubmit();" class="modal-button">送信</button>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

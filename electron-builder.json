@@ -1,0 +1,58 @@
+{
+  "appId": "com.elecom.windows-signage",
+  "copyright": "Copyright © 2020 Elecom",
+  "files": [
+    "dist/",
+    "node_modules/",
+    "auth/",
+    "app.html",
+    "main.prod.js",
+    "main.prod.js.map",
+    "package.json"
+  ],
+  "nsis": {
+    "oneClick": true,
+    "perMachine": true,
+    "createDesktopShortcut": false,
+    "allowToChangeInstallationDirectory": false,
+    "deleteAppDataOnUninstall": true
+  },
+  "dmg": {
+    "contents": [
+      {
+        "x": 130,
+        "y": 220
+      },
+      {
+        "x": 410,
+        "y": 220,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://localhost:9090"
+      }
+    ]
+  },
+  "linux": {
+    "target": ["deb", "rpm", "AppImage"],
+    "category": "Development"
+  },
+  "directories": {
+    "buildResources": "resources",
+    "output": "release"
+  },
+  "extraResources": ["./resources/**"],
+  "afterPack": "./internals/scripts/RemoveLocales.js"
+}

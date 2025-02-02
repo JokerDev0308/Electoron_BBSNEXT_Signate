@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: normal;
+  src: url('./notosans/notosans-regular.ttf');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: bold;
+  src: url('./notosans/notosans-bold.ttf');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-weight: normal;
+  src: url('./notoserif/notoserif-regular.otf');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-weight: bold;
+  src: url('./notoserif/notoserif-bold.otf');
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-weight: normal;
+  src: url('./mplusr1c/mplusr1c-regular.ttf');
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-weight: bold;
+  src: url('./mplusr1c/mplusr1c-bold.ttf');
+}

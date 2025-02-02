@@ -1,0 +1,21 @@
+{
+  "name": "ElecomSignage",
+  "productName": "掲示板NEXTサイネージ",
+  "version": "1.5.0",
+  "description": "Elecom Windows Signage",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "ELECOM CO.,LTD."
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild",
+    "typeorm-cli": "cross-env NODE_ENV=development ts-node node_modules/typeorm/cli.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "detect-usb": "^2.0.0",
+    "sqlite3": "4.2.0",
+    "typeorm": "^0.2.29"
+  }
+}
